@@ -10,9 +10,6 @@
     --main-bg-color: #E5E5E5;
     --primary-color: #295CCF;
     --text-color: #081D34;
-    --why-bg-color: #081D34;
-
-    --border-radius: 5px;
 }
 
 html {
@@ -20,7 +17,12 @@ html {
 }
 
 body {
-    background-color: var(--main-bg-color);
+    background: radial-gradient(91% 420.2% at 7.25% 6.6%, 
+                            rgba(41, 92, 207, 0.16) 0%, 
+                            rgba(41, 92, 207, 0.05) 16.67%, 
+                            rgba(41, 92, 207, 0.07) 46.95%, 
+                            rgba(41, 92, 207, 0.03) 70.31%, 
+                            rgba(41, 92, 207, 0.22) 100%);
 }
 
 a {
@@ -36,13 +38,18 @@ a {
 .btn-primary {
     background-color: var(--primary-color);
     color: #fff;
-    border-radius: var(--border-radius);
+    border-radius: 5px;
 }
 
 .btn-outline-primary {
     border: 1px solid var(--primary-color);
-    border-radius: var(--border-radius);
+    border-radius: 5px;
     color: var(--primary-color);
+}
+
+.btn-outline-primary .arrow-down {
+    transform: translateY(5px);
+    margin-right: 10px;
 }
 
 .section-title {
@@ -67,12 +74,6 @@ a {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background: radial-gradient(91% 420.2% at 7.25% 6.6%, 
-                            rgba(41, 92, 207, 0.16) 0%, 
-                            rgba(41, 92, 207, 0.05) 16.67%, 
-                            rgba(41, 92, 207, 0.07) 46.95%, 
-                            rgba(41, 92, 207, 0.03) 70.31%, 
-                            rgba(41, 92, 207, 0.22) 100%);
 }
 
 .top-section .container {
@@ -170,7 +171,7 @@ a {
 .why-section {
     display: flex;
     justify-content: center;
-    background-color: var(--why-bg-color);
+    background-color: var(--text-color);
     color: #fff;
 }
 
@@ -214,6 +215,7 @@ a {
 }
 
 .app-section {
+    background-color: var(--main-bg-color);
     display: flex;
     justify-content: center;
     padding: 70px 0;
@@ -295,11 +297,6 @@ a {
     flex-grow: 1;
 }
 
-.app-section .arrow-down {
-    transform: translateY(5px);
-    margin-right: 10px;
-}
-
 .app-section .social-links .store {
     display: flex;
     align-items: center;
@@ -324,6 +321,7 @@ a {
 }
 
 .media-section {
+    background-color: var(--main-bg-color);
     display: flex;
     justify-content: center;
 }
@@ -343,6 +341,7 @@ a {
 }
 
 .faq-section {
+    background-color: var(--main-bg-color);
     display: flex;
     justify-content: center;
     padding: 100px 0;
@@ -374,6 +373,10 @@ a {
     right: 20px;
 }
 
+.faq-section .question.opened::after {
+    transform: rotate(180deg);
+}
+
 .faq-section .question.opened .question-answer {
     height: 100%;
     width: 80%;
@@ -393,9 +396,10 @@ a {
 }
 
 .feedback-section {
+    background-color: var(--main-bg-color);
     display: flex;
     justify-content: center;
-    margin-bottom: 200px;
+    padding-bottom: 100px;
 }
 
 .feedback-section .container {
@@ -452,6 +456,102 @@ a {
 
 .feedback-section .question-textarea textarea {
     max-width: 100%;
+    height: 240px;
+    padding: 10px;
+}
+
+/* ======================== Instruction page =================== */
+.hero-section .macbook {
+    object-fit: cover;
+    width: 100%;
+}
+
+.pc-instruction {
+    display: flex;
+    justify-content: center;
+    padding: 90px 0;
+}
+
+.pc-instruction .container {
+    flex-direction: column;
+}
+
+.pc-instruction .instruction-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.pc-instruction .instruction {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: calc((100% - 40px) / 2);
+    margin-bottom: 80px;
+}
+
+.pc-instruction .instruction-top {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 40px;
+}
+
+.pc-instruction .instruction-top .number {
+    font-size: 3.5rem;
+    margin-right: 20px;
+    line-height: 64px;
+}
+
+.pc-instruction .instruction-text {
+    font-size: 1.5rem;
+}
+
+.pc-instruction .instruction-top .btn {
+    padding-bottom: 0.875rem;
+    margin-top: 20px;
+}
+
+.pc-instruction .instruction .instruction-img {
+    object-fit: cover;
+    width: 100%;
+}
+
+
+/* ============================ Footer ========================== */
+
+.footer {
+    display: flex;
+    justify-content: center;
+    padding: 70px 0;
+    background-color: var(--text-color);
+    color: #ffffff;
+}
+
+.footer .container {
+    justify-content: space-between;
+}
+
+.footer .footer-col {
+    width: calc(100% - 50px) / 3;
+    display: flex;
+    flex-direction: column;
+}
+
+.footer .wipon-logo {
+    margin-right: 10px;
+}
+
+.footer .copywrites {
+    margin-top: 10px;
+    color: #F4F9FF;
+    font-size: 1.125rem;
+    opacity: .6;
+}
+
+.footer .footer-item {
+    margin-bottom: 8px;
+    color: #fff;
+    font-size: 1.125rem;
 }
 
 
