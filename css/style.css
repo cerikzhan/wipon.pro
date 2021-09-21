@@ -1,0 +1,459 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;700&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --main-bg-color: #E5E5E5;
+    --primary-color: #295CCF;
+    --text-color: #081D34;
+    --why-bg-color: #081D34;
+
+    --border-radius: 5px;
+}
+
+html {
+    font-family: 'IBM Plex Sans', sans-serif;
+}
+
+body {
+    background-color: var(--main-bg-color);
+}
+
+a {
+    color: var(--primary-color);
+    text-decoration: none;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 15px;
+}
+
+.btn-primary {
+    background-color: var(--primary-color);
+    color: #fff;
+    border-radius: var(--border-radius);
+}
+
+.btn-outline-primary {
+    border: 1px solid var(--primary-color);
+    border-radius: var(--border-radius);
+    color: var(--primary-color);
+}
+
+.section-title {
+    font-size: 3.5rem;
+    font-weight: 600;
+    line-height: 4rem;
+}
+
+.text-primary {
+    color: var(--primary-color);
+}
+
+.container {
+    max-width: 1440px;
+    display: flex;
+    flex-grow: 1;
+    padding: 0 2rem;
+}
+
+.top-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: radial-gradient(91% 420.2% at 7.25% 6.6%, 
+                            rgba(41, 92, 207, 0.16) 0%, 
+                            rgba(41, 92, 207, 0.05) 16.67%, 
+                            rgba(41, 92, 207, 0.07) 46.95%, 
+                            rgba(41, 92, 207, 0.03) 70.31%, 
+                            rgba(41, 92, 207, 0.22) 100%);
+}
+
+.top-section .container {
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+.top-section .header {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.top-section .header .container {
+    height: 90px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header .logo-wrapper {
+    margin-right: 42px;
+}
+
+.header .navbar {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    flex-grow: 1;
+}
+
+.navbar .navbar-item {
+    margin-right: 30px;
+}
+
+.navbar .navbar-link {
+    color: #081D34;
+    font-weight: 500;
+}
+
+.hero-section {
+    display: flex;
+    align-items: center;
+}
+
+.hero-section .text-container {
+    width: 50%;
+}
+
+.text-container .hero-text {
+    width: 70%;
+    font-weight: 400;
+    font-size: 1.125rem;
+    margin: 2rem 0;
+}
+
+.hero-section .image-container {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    margin-top: 4rem;
+}
+
+.hero-section .card {
+    position: absolute;
+    display: flex;
+    width: 310px;
+    height: 100px;
+    align-items: center;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 20px;
+}
+
+.hero-section .card .card-image {
+    margin-right: 22px;
+}
+
+.hero-section .card-title {
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+
+.hero-section .card-success {
+    top: 70px;
+    right: 0;
+}
+
+.hero-section .card-danger {
+    bottom: 70px;
+    left: 0;
+}
+
+.why-section {
+    display: flex;
+    justify-content: center;
+    background-color: var(--why-bg-color);
+    color: #fff;
+}
+
+.why-section .container {
+    flex-direction: column;
+    margin: 160px 0;
+}
+
+.why-section .laws-wrapper {
+    display: flex;
+}
+
+.why-section .section-title {
+    margin-bottom: 45px;
+}
+
+.why-section .law {
+    width: calc((100% - 40px) / 2);
+    border-top: 1px solid #fff;
+}
+
+.why-section .law:first-child {
+    margin-right: 40px;
+}
+
+.why-section .law-title {
+    margin: 10px 0 16px 0;
+}
+
+.why-section .law-text {
+    font-size: 1.125rem;
+}
+
+.why-section .card {
+    display: flex;
+    align-items: center;
+    background: rgba(255, 255, 255, .05);
+    border-radius: 10px;
+    padding: 22px 12px;
+    margin-top: 50px;
+}
+
+.app-section {
+    display: flex;
+    justify-content: center;
+    padding: 70px 0;
+}
+
+.app-section .container {
+    flex-direction: column;
+}
+
+.app-section .section-title {
+    width: 69%;
+}
+
+.app-section .cards-wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 136px;
+}
+
+.app-section .card {
+    width: calc((100% - 80px) / 3);
+    background-color: #fff;
+    border: 1px solid #DDDDDD;
+    border-radius: 20px;
+    text-align: center;
+}
+
+.app-section .card-top {
+    position: relative;
+    padding-top: 34%;
+    border-bottom: 1px solid #DDDDDD;
+}
+
+.app-section .card-img {
+    position: absolute;
+    top: -24%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.app-section .card-img img {
+    width: 90%;
+    height: auto;
+    object-fit: cover;
+}
+
+.app-section .card-title {
+    font-size: 2rem;
+    font-weight: 600;
+    margin-bottom: 23px;
+}
+
+.app-section .card-bottom {
+    padding: 20px 30px 30px 30px;
+}
+
+.app-section .days {
+    margin-bottom: 0.5rem;
+    opacity: .6;
+}
+
+.app-section .price {
+    font-weight: 600;
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+}
+
+.app-section .social-links {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.app-section .social-links .btn {
+    padding: 0.875rem 0;
+    flex-grow: 1;
+}
+
+.app-section .arrow-down {
+    transform: translateY(5px);
+    margin-right: 10px;
+}
+
+.app-section .social-links .store {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(41, 92, 207, .1);
+    padding: 0.5rem;
+    border-radius: 5px;
+    margin-left: 10px;
+}
+
+.app-section .card-question {
+    position: relative;
+}
+
+.app-section .card-question::after {
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 100%;
+    border-bottom: 1px dashed var(--primary-color);
+}
+
+.media-section {
+    display: flex;
+    justify-content: center;
+}
+
+.media-section .container {
+    flex-direction: column;
+    padding: 80px 2rem;
+    border-top: 1px solid #C5CDD6;
+    border-bottom: 1px solid #C5CDD6;
+}
+
+.media-section .company-list {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    list-style: none;
+}
+
+.faq-section {
+    display: flex;
+    justify-content: center;
+    padding: 100px 0;
+}
+
+.faq-section .container {
+    flex-direction: column;
+}
+
+.faq-section .questions-list {
+    margin-top: 48px;
+}
+
+.faq-section .question {
+    background-color: #fff;
+    border-radius: 5px;
+    overflow: hidden;
+    margin-bottom: 16px;
+    position: relative;
+}
+
+.faq-section .question::after {
+    content: '';
+    width: 20px;
+    height: 10px;
+    background: url('../assets/images/chevron-down.svg') 100% 100% no-repeat;
+    position: absolute;
+    top: 35px;
+    right: 20px;
+}
+
+.faq-section .question.opened .question-answer {
+    height: 100%;
+    width: 80%;
+    margin: 0 20px 40px 20px;
+}
+
+.faq-section .question-title {
+    margin: 24px 20px;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+.faq-section .question-answer {
+    height: 0;
+    line-height: 26px;
+    font-size: 18px;
+}
+
+.feedback-section {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 200px;
+}
+
+.feedback-section .container {
+    flex-direction: column;
+}
+
+.feedback-section .inner-wrapper {
+    padding: 40px;
+    background-color: #fff;
+    border-radius: 20px;
+}
+
+.feedback-section .feedback-text {
+    margin: 16px 0 40px 0;
+    font-size: 24px;
+}
+
+.feedback-section .feedback-form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.feedback-section .form-group {
+    width: calc((100% - 80px) / 3);
+    display: flex;
+    flex-direction: column;
+}
+
+.feedback-section label {
+    margin-bottom: 10px;
+    font-size: 14px;
+    text-transform: uppercase;
+    color: #677584;
+}
+
+.feedback-section .form-input {
+    height: 50px;
+    border: none;
+    background-color: #EEF1F9;
+    font-size: 18px;
+    padding: 0 10px;
+    border-radius: 10px;
+}
+
+.feedback-section .form-input:focus {
+    outline: none;
+}
+
+.feedback-section .question-textarea {
+    width: 100%;
+    margin: 40px 0;
+}
+
+.feedback-section .question-textarea textarea {
+    max-width: 100%;
+}
+
+
+
+
