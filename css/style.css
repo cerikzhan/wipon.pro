@@ -52,6 +52,21 @@ a {
     margin-right: 10px;
 }
 
+.btn-link {
+    font-size: 1.5rem;
+    position: relative;
+}
+
+.btn-link::after {
+    position: absolute;
+    content: '';
+    height: 1px;
+    width: 80%;
+    bottom: 10px;
+    left: 15px;
+    border-bottom: 1px dashed #B6CBF9;
+}
+
 .section-title {
     font-size: 3.5rem;
     font-weight: 600;
@@ -108,6 +123,7 @@ a {
 .hero-section {
     display: flex;
     align-items: center;
+    justify-content: center;
 }
 
 .hero-section .container {
@@ -512,6 +528,96 @@ a {
     width: 100%;
 }
 
+
+/* ======================== Payment page ======================== */
+.payment-section {
+    display: flex;
+    justify-content: center;
+    padding: 240px 0;
+}
+
+.payment-section .container {
+    flex-direction: column;
+}
+
+.terminal .container {
+    border-top: 1px solid #C5CDD6;
+}
+
+.terminal .section-title {
+    margin-bottom: 24px;
+}
+
+.payment-section .payment-list {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 48px;
+}
+
+.payment-section .payment {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: calc((100% - 120px) / 4);
+    padding: 3%;
+    border-radius: 20px;
+    background-color: #fff;
+    box-shadow: 0px 6.17486px 38.5929px rgba(8, 29, 52, 0.05);
+}
+
+.payment-section .payment img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.pc-instruction.closed {
+    height: 0;
+    overflow: hidden;
+}
+
+.explanation-section {
+    display: flex;
+    justify-content: center;
+    font-size: 1.125rem;
+}
+
+.explanation-section .container {
+    flex-direction: column;
+    border-top: 1px solid #C5CDD6;
+    padding-top: 60px;
+    padding-bottom: 44px;
+}
+
+.explanation-section .explanation-title {
+    margin:16px 0 24px 0;
+    font-size: 2rem;
+}
+
+.explanation-section .explanation-subtitle {
+    margin-bottom: 16px;
+}
+
+.explanation-section .explanation-text,
+.explanation-section .explanation-list:last-child {
+    margin-bottom: 16px;
+}
+
+.explanation-section .contacts {
+    display: flex;
+    justify-content: space-between;
+}
+
+.explanation-section .contacts .contact-list {
+    list-style: none;
+    width: calc(100/3);
+}
+
+.explanation-section .contacts .title {
+    font-weight: 600;
+}
 
 /* ============================ Footer ========================== */
 
