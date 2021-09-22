@@ -10,6 +10,7 @@
     --main-bg-color: #E5E5E5;
     --primary-color: #295CCF;
     --text-color: #081D34;
+    --hover-color: #2C6DFE;
 
     --regular-font-size: 1.125rem;
     --medium-font-size: 2rem;
@@ -37,6 +38,11 @@ a {
     text-decoration: none;
 }
 
+a:hover {
+    color: var(--hover-color);
+    transition: color .2s ease;
+}
+
 .btn {
     display: inline-block;
     padding: 10px 15px;
@@ -48,6 +54,12 @@ a {
     border-radius: 5px;
 }
 
+.btn-primary:hover {
+    color: #fff;
+    background-color: var(--hover-color);
+    transition: background-color .2s ease;
+}
+
 .btn-outline-primary {
     display: flex;
     align-items: center;
@@ -56,6 +68,12 @@ a {
     border: 1px solid var(--primary-color);
     border-radius: 5px;
     color: var(--primary-color);
+}
+
+.btn-outline-primary:hover {
+    border-color: var(--hover-color);
+    color: var(--hover-color);
+    transition: color .2s ease;
 }
 
 .btn-outline-primary .arrow-down {
@@ -459,6 +477,11 @@ header .burger-item.bottom {
     padding-right: 40px;
     font-size: var(--medium-font-size);
     cursor: pointer;
+}
+
+.faq-section .question-title:hover {
+    color: var(--hover-color);
+    transition: color .2s ease;
 }
 
 .faq-section .question-answer {
