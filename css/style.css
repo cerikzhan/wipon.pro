@@ -619,6 +619,72 @@ a {
     font-weight: 600;
 }
 
+/* ====================== Qiwi payment page ==================== */
+.pay-section {
+    display: flex;
+    justify-content: center;
+}
+
+.pay-section .payment-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+    padding: 40px;
+    margin: 100px auto;
+    background-color: #fff;
+    border-radius: 20px;
+}
+
+.pay-section .card-header {
+    padding-bottom: 32px;
+}
+
+.pay-section .card-body {
+    width: 100%;
+}
+
+.pay-section .form-group {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.pay-section .radio-group {
+    flex-direction: row;
+    justify-content: space-around;
+    margin-bottom: 32px;
+}
+
+.pay-section label {
+    margin-bottom: 10px;
+    font-size: 14px;
+    text-transform: uppercase;
+    color: #677584;
+}
+
+.pay-section .form-input {
+    height: 50px;
+    width: 100%;
+    border: none;
+    background-color: #EEF1F9;
+    font-size: 18px;
+    padding: 0 10px;
+    margin-bottom: 32px;
+    border-radius: 10px;
+}
+
+.pay-section .form-input:focus {
+    outline: none;
+}
+
+.pay-section .btn-submit {
+    width: 100%;
+    border: none;
+    cursor: pointer;
+    font-size: 1.125rem;
+}
+
 /* ============================ Footer ========================== */
 
 .footer {

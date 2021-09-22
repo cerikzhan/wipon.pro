@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="../../css/style.css" rel="stylesheet">
+    <title>Wipon.pro - Alfa Bank</title>
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="logo-wrapper">
+                <a href="#" class="logo-lin">
+                    <img src="../../assets/images/wipon_pro_logo.svg" alt="wipon pro">
+                </a>
+            </div>
+            <ul class="navbar">
+                <li class="navbar-item">
+                    <a href="/#solution" class="navbar-link">Решение</a>
+                </li>
+                <li class="navbar-item">
+                    <a href="/instruction" class="navbar-link">Инструкции</a>
+                </li>
+                <li class="navbar-item">
+                    <a href="/payment" class="navbar-link active">Оплата</a>
+                </li>
+                <li class="navbar-item">
+                    <a href="/#faq" class="navbar-link">Вопросы-ответы</a>
+                </li>
+            </ul>
+            <div class="btn-wrapper">
+                <a href="#" class="btn btn-outline-primary">Для потребителей</a>
+            </div>
+        </div>
+    </header>
+    <section class="pay-section">
+        <div class="container">
+            <div class="payment-card">
+                <div class="card-header">
+                    <img src="../../assets/images/alfa-bank.png" alt="alfa-bank">
+                </div>
+                <div class="card-body">
+                    <form action="#" class="alfa-bank-form">
+                        <div class="form-group radio-group">
+                            <div>
+                                <input type="radio" id="accountNumberType" name="payment-type" checked value="account">
+                                <label for="accountNumberType">Лицевой счёт</label>
+                            </div>
+                            <div>
+                                <input type="radio" id="phoneNumberType" name="payment-type" value="number">
+                                <label for="phoneNumberType">Текущий номер телефона</label>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="phoneNumber">Лицевой счёт</label>
+                            <input class="form-input" type="tel" id="phoneNumber">
+                        </div>
+                        <div class="form-group">
+                            <label for="totalSum">сумма пополнения</label>
+                            <input class="form-input" type="text" id="totalSum">
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-submit">Оплатить</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="container">
+          <div class="footer-col logo-wrapper">
+            <div class="logo">
+              <img class="wipon-logo" src="../../assets/images/wipon-logo.svg" alt="wipon logo">
+              <img class="wipon-text" src="../../assets/images/wipon-text.svg" alt="wipon text">
+            </div>
+            <p class="copywrites">© Wipon 2021</p>
+          </div>
+          <div class="footer-col tech-support">
+            <p class="footer-item footer-title">Контакты техподдержки</p>
+            <a href="tel:+77719365061" class="footer-item">+7(771)936-50-61</a>
+            <a href="tel:+77719365062" class="footer-item">+7(771)936-50-62</a>
+            <a href="mailto:operator@wiponapp.com" class="footer-item">operator@wiponapp.com</a>
+          </div>
+          <div class="footer-col counters">
+            <p class="footer-item footer-title">Бухгалтерия</p>
+            <a href="tel:+77719365061" class="footer-item">+7(717)273-83-86</a>
+            <a href="mailto:infor@wiponapp.com" class="footer-item">info@wiponapp.com</a>
+            <p class="footer-item">ПН-ПТ 9:00-18:00</p>
+            <p class="footer-item">Обед 13:00-14:00</p>
+          </div>
+        </div>
+      </footer>
+</body>
+</html>
